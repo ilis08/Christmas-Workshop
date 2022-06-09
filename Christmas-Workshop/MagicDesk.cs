@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace Christmas_Workshop
 {
-    public class Doll : IToy
+    internal class MagicDesk
     {
-        public string Name { get; } = "Doll";
     }
 }

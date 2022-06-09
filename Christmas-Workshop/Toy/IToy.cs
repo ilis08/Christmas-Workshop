@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Christmas_Workshop
+namespace Christmas_Workshop.Toy
 {
-    public class Bicycle : IToy
+    public interface IToy
     {
-        public string Name { get; } = "Bicycle";
+        public string Name { get; }
     }
 }
