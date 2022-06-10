@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace Christmas_Workshop.Observer
 {
-    internal class IObserver
+    public interface IObserver
     {
+        // Receive update from subject
+        void Update(ISubject subject);
     }
 }

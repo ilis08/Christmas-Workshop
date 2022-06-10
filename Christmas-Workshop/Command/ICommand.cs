@@ -1,4 +1,5 @@
-﻿using Christmas_Workshop.Toy;
+﻿using Christmas_Workshop.Observer;
+using Christmas_Workshop.Toy;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +10,7 @@ namespace Christmas_Workshop.Command
 {
     public interface ICommand
     {
-        public IToy GetToy();
+        public MagicBoard MagicBoard { get; set; }
+        public void GetToy();
     }
 }

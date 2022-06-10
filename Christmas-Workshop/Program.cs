@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Christmas_Workshop.Singleton;
+using Christmas_Workshop.Toy;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,7 +12,11 @@ namespace Christmas_Workshop
     {
         public static void Main()
         {
-           
+            var santa = SantaClaus.GetSanta;
+
+            santa.Toys.Add(new Doll());
+
+
         }
     }
 }
