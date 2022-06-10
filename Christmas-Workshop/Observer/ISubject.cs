@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Christmas_Workshop
+namespace Christmas_Workshop.Observer
 {
-    public class Dwarf
+    internal interface ISubject
     {
-
     }
 }

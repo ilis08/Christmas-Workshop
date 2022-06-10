@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Christmas_Workshop
+namespace Christmas_Workshop.Command
 {
-    internal class MagicDesk
+    internal class GetDollCommand
     {
     }
 }

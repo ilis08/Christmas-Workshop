@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Christmas_Workshop
+namespace Christmas_Workshop.Factory
 {
     public abstract class ToyFactory
     {

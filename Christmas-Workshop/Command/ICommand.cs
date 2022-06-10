@@ -5,13 +5,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Christmas_Workshop
+namespace Christmas_Workshop.Command
 {
-    public class DollFactory : ToyFactory
+    public interface ICommand
     {
-        public override IToy CreateToy()
-        {
-            return new Doll();  
-        }
+        public IToy GetToy();
     }
 }
