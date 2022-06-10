@@ -8,26 +8,23 @@ namespace Christmas_Workshop.Observer
 {
     public class MagicBoard : ISubject
     {
-        private static Lazy<MagicBoard> magicBoard { get; set; } = new Lazy<MagicBoard>();
         private List<IObserver> _observers = new List<IObserver>();
         public string ToyName { get; private set; }
 
-        private MagicBoard()
-        {
+        private static readonly Lazy<MagicBoard> _magicBoard
+              = new(() => new MagicBoard());
 
-        }
-
-        public static MagicBoard GetMagicBoard
+        public static MagicBoard Instance
         {
             get
             {
-                if (magicBoard is null)
-                {
-                    return new MagicBoard();
-                }
-
-                return magicBoard.Value;
+                return _magicBoard.Value;
             }
+        }
+
+        protected MagicBoard()
+        {
+
         }
 
         public void Attach(IObserver observer)
